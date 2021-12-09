@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ASCII"?>
+<moduleeer:MEERModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:moduleeer="http://moduleeer/1.0" name="Splitted M1">
+  <modules>
+    <modularizableElements xsi:type="moduleeer:RelationshipType" name="Employs">
+      <linksToEntities cardinality="ONE_TO_ONE" entity="//@modules.0/@modularizableElements.2"/>
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.0/@modularizableElements.5"/>
+    </modularizableElements>
+    <modularizableElements xsi:type="moduleeer:RelationshipType" name="Offers">
+      <linksToEntities cardinality="ONE_TO_ONE" entity="//@modules.0/@modularizableElements.2"/>
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.0/@modularizableElements.4"/>
+    </modularizableElements>
+    <modularizableElements xsi:type="moduleeer:EntityType" name="Department" links="//@modules.0/@modularizableElements.0/@linksToEntities.0 //@modules.0/@modularizableElements.1/@linksToEntities.0"/>
+    <modularizableElements xsi:type="moduleeer:RelationshipType" name="Teaches">
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.0/@modularizableElements.5"/>
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.0/@modularizableElements.4"/>
+    </modularizableElements>
+    <modularizableElements xsi:type="moduleeer:EntityType" name="Course" links="//@modules.0/@modularizableElements.1/@linksToEntities.1 //@modules.0/@modularizableElements.3/@linksToEntities.1 //@modules.1/@modularizableElements.0/@linksToEntities.0"/>
+    <modularizableElements xsi:type="moduleeer:EntityType" name="Lecturer" links="//@modules.0/@modularizableElements.0/@linksToEntities.1 //@modules.0/@modularizableElements.3/@linksToEntities.0"/>
+  </modules>
+  <modules>
+    <modularizableElements xsi:type="moduleeer:RelationshipType" name="Enrolls">
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.0/@modularizableElements.4"/>
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.1/@modularizableElements.1"/>
+    </modularizableElements>
+    <modularizableElements xsi:type="moduleeer:EntityType" name="Student" links="//@modules.2/@modularizableElements.0/@linksToEntities.0 //@modules.1/@modularizableElements.0/@linksToEntities.1"/>
+  </modules>
+  <modules>
+    <modularizableElements xsi:type="moduleeer:RelationshipType" name="Lives">
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.1/@modularizableElements.1"/>
+      <linksToEntities cardinality="ONE_TO_MANY" entity="//@modules.2/@modularizableElements.1"/>
+    </modularizableElements>
+    <modularizableElements xsi:type="moduleeer:EntityType" name="Address" links="//@modules.2/@modularizableElements.0/@linksToEntities.1"/>
+  </modules>
+</moduleeer:MEERModel>

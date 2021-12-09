@@ -1,0 +1,76 @@
+package momot.^search
+
+import at.ac.tuwien.big.momot.^search.^fitness.dimension.TransformationLengthDimension
+import at.ac.tuwien.big.moea.^experiment.executor.listener.SeedRuntimePrintListener
+import moduleeer.MEERModel
+import moduleeer.demo.ModuleEERFFUtils
+import moduleeer.ModuleeerPackage
+
+initialization = {
+	ModuleeerPackage.eINSTANCE.eClass();
+	System.out.println("Search started.");
+}
+
+search = {
+	model          = {
+		file       = "problem/college.moduleeer.xmi"
+	}
+	solutionLength  = 10
+
+	transformations = {
+		modules = [ "transformations/errules.henshin" ]
+	}
+
+	fitness         = {
+		objectives = {
+			Cohesion : maximize { ModuleEERFFUtils.calculateCohesion(root as MEERModel)  }
+			Coupling : minimize { ModuleEERFFUtils.calculateCoupling(root as MEERModel)  }
+			NrOfModules : maximize { ModuleEERFFUtils.calculateNrOfModules(root as MEERModel)  }
+			AvgNrModElements : maximize { ModuleEERFFUtils.calculateAverageNrModElements(root as MEERModel)  }
+			StdDevModules : maximize { ModuleEERFFUtils.calculateStdDevModules(root as MEERModel)  }
+			SolutionLength : minimize new TransformationLengthDimension
+		}
+	}
+
+	algorithms      = {
+	//	Random  : moea.createRandomSearch()
+		NSGAII  : moea.createNSGAII()
+	//	NSGAIII : moea.createNSGAIII()
+	}
+}
+
+experiment = {
+	populationSize    = 100
+	maxEvaluations    = 5000
+	nrRuns            = 1
+	progressListeners = [ new SeedRuntimePrintListener ]
+}
+
+analysis = {
+	indicators       = [ hypervolume generationalDistance ]
+	significance     = 0.01
+	show             = [ aggregateValues statisticalSignificance individualValues ]
+	outputFile       = "output/analysis/analysis.txt"
+	boxplotDirectory = "output/analysis/"
+	printOutput
+}
+
+results = {
+	objectives = {
+		outputFile      = "output/objectives/objective_values.txt"
+		printOutput
+	}
+
+	solutions  = {
+		outputFile      = "output/solutions/objective_values.txt"
+		outputDirectory = "output/solutions/"
+	}
+
+	models     = {
+		outputDirectory = "output/models/"
+	}
+}
+
+finalization = {
+	System.out.println("Search finished.");
+}

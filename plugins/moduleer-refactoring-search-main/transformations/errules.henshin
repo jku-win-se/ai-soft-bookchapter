@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<henshin:Module xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:henshin="http://www.eclipse.org/emf/2011/Henshin" xmi:id="_Q_bZcE0xEey_FNrX6BL9nA">
+  <imports href="http://moduleeer/1.0#/"/>
+  <units xsi:type="henshin:Rule" xmi:id="_Wbdu4E0yEey_FNrX6BL9nA" name="moveEntityCreateNewModule">
+    <parameters xmi:id="_UrJLUE0zEey_FNrX6BL9nA" name="newModuleName">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <parameters xmi:id="_wJYCEE0zEey_FNrX6BL9nA" name="entityName">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_Wb0UME0yEey_FNrX6BL9nA" name="Lhs">
+      <nodes xmi:id="_IkzEkE0zEey_FNrX6BL9nA" incoming="_k3A2QFHDEeyB_sSB7jR5Kw" outgoing="_m4NR8FHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <nodes xmi:id="_gPNEYE0zEey_FNrX6BL9nA" incoming="_m4NR8FHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//EntityType"/>
+        <attributes xmi:id="_xq--wE0zEey_FNrX6BL9nA" value="entityName">
+          <type href="http://moduleeer/1.0#//NameElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kW1hYFHDEeyB_sSB7jR5Kw" outgoing="_k3A2QFHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel"/>
+      </nodes>
+      <edges xmi:id="_k3A2QFHDEeyB_sSB7jR5Kw" source="_kW1hYFHDEeyB_sSB7jR5Kw" target="_IkzEkE0zEey_FNrX6BL9nA">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_m4NR8FHDEeyB_sSB7jR5Kw" source="_IkzEkE0zEey_FNrX6BL9nA" target="_gPNEYE0zEey_FNrX6BL9nA">
+        <type href="http://moduleeer/1.0#//Module/modularizableElements"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_Wb0UMU0yEey_FNrX6BL9nA" name="Rhs">
+      <nodes xmi:id="_t0RBUE0yEey_FNrX6BL9nA" incoming="_ociygFHDEeyB_sSB7jR5Kw" outgoing="_nZuqoFHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+        <attributes xmi:id="_06-lUE0yEey_FNrX6BL9nA" value="newModuleName">
+          <type href="http://moduleeer/1.0#//NameElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_IkzEkU0zEey_FNrX6BL9nA" incoming="_k3A2QVHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <nodes xmi:id="_gPNrcE0zEey_FNrX6BL9nA" incoming="_nZuqoFHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//EntityType"/>
+        <attributes xmi:id="_xrAz8E0zEey_FNrX6BL9nA" value="entityName">
+          <type href="http://moduleeer/1.0#//NameElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_kW2vgFHDEeyB_sSB7jR5Kw" outgoing="_k3A2QVHDEeyB_sSB7jR5Kw _ociygFHDEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel"/>
+      </nodes>
+      <edges xmi:id="_k3A2QVHDEeyB_sSB7jR5Kw" source="_kW2vgFHDEeyB_sSB7jR5Kw" target="_IkzEkU0zEey_FNrX6BL9nA">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_nZuqoFHDEeyB_sSB7jR5Kw" source="_t0RBUE0yEey_FNrX6BL9nA" target="_gPNrcE0zEey_FNrX6BL9nA">
+        <type href="http://moduleeer/1.0#//Module/modularizableElements"/>
+      </edges>
+      <edges xmi:id="_ociygFHDEeyB_sSB7jR5Kw" source="_kW2vgFHDEeyB_sSB7jR5Kw" target="_t0RBUE0yEey_FNrX6BL9nA">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_IkzEkk0zEey_FNrX6BL9nA" origin="_IkzEkE0zEey_FNrX6BL9nA" image="_IkzEkU0zEey_FNrX6BL9nA"/>
+    <mappings xmi:id="_gPNrcU0zEey_FNrX6BL9nA" origin="_gPNEYE0zEey_FNrX6BL9nA" image="_gPNrcE0zEey_FNrX6BL9nA"/>
+    <mappings xmi:id="_kW2vgVHDEeyB_sSB7jR5Kw" origin="_kW1hYFHDEeyB_sSB7jR5Kw" image="_kW2vgFHDEeyB_sSB7jR5Kw"/>
+  </units>
+  <units xsi:type="henshin:Rule" xmi:id="_7GFggFHDEeyB_sSB7jR5Kw" name="moveEntity">
+    <parameters xmi:id="_RPZhAFHEEeyB_sSB7jR5Kw" name="entityName">
+      <type xsi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </parameters>
+    <lhs xmi:id="_7GH8wFHDEeyB_sSB7jR5Kw" name="Lhs">
+      <nodes xmi:id="_Up4q4FHEEeyB_sSB7jR5Kw" outgoing="_fu2NIFHEEeyB_sSB7jR5Kw _hwn3oFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel"/>
+      </nodes>
+      <nodes xmi:id="_XfvdsFHEEeyB_sSB7jR5Kw" incoming="_scNQkFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//EntityType"/>
+        <attributes xmi:id="_ZKQewFHEEeyB_sSB7jR5Kw" value="entityName">
+          <type href="http://moduleeer/1.0#//NameElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_cq-McFHEEeyB_sSB7jR5Kw" incoming="_hwn3oFHEEeyB_sSB7jR5Kw" outgoing="_scNQkFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <nodes xmi:id="_d08FMFHEEeyB_sSB7jR5Kw" incoming="_fu2NIFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <edges xmi:id="_fu2NIFHEEeyB_sSB7jR5Kw" source="_Up4q4FHEEeyB_sSB7jR5Kw" target="_d08FMFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_hwn3oFHEEeyB_sSB7jR5Kw" source="_Up4q4FHEEeyB_sSB7jR5Kw" target="_cq-McFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_scNQkFHEEeyB_sSB7jR5Kw" source="_cq-McFHEEeyB_sSB7jR5Kw" target="_XfvdsFHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module/modularizableElements"/>
+      </edges>
+    </lhs>
+    <rhs xmi:id="_7GH8wVHDEeyB_sSB7jR5Kw" name="Rhs">
+      <nodes xmi:id="_Up55AFHEEeyB_sSB7jR5Kw" outgoing="_fu2NIVHEEeyB_sSB7jR5Kw _hwn3oVHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel"/>
+      </nodes>
+      <nodes xmi:id="_XfvdsVHEEeyB_sSB7jR5Kw" incoming="_phWB8FHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//EntityType"/>
+        <attributes xmi:id="_ZKQewVHEEeyB_sSB7jR5Kw" value="entityName">
+          <type href="http://moduleeer/1.0#//NameElement/name"/>
+        </attributes>
+      </nodes>
+      <nodes xmi:id="_cq-McVHEEeyB_sSB7jR5Kw" incoming="_hwn3oVHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <nodes xmi:id="_d08FMVHEEeyB_sSB7jR5Kw" incoming="_fu2NIVHEEeyB_sSB7jR5Kw" outgoing="_phWB8FHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module"/>
+      </nodes>
+      <edges xmi:id="_fu2NIVHEEeyB_sSB7jR5Kw" source="_Up55AFHEEeyB_sSB7jR5Kw" target="_d08FMVHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_hwn3oVHEEeyB_sSB7jR5Kw" source="_Up55AFHEEeyB_sSB7jR5Kw" target="_cq-McVHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//MEERModel/modules"/>
+      </edges>
+      <edges xmi:id="_phWB8FHEEeyB_sSB7jR5Kw" source="_d08FMVHEEeyB_sSB7jR5Kw" target="_XfvdsVHEEeyB_sSB7jR5Kw">
+        <type href="http://moduleeer/1.0#//Module/modularizableElements"/>
+      </edges>
+    </rhs>
+    <mappings xmi:id="_Up55AVHEEeyB_sSB7jR5Kw" origin="_Up4q4FHEEeyB_sSB7jR5Kw" image="_Up55AFHEEeyB_sSB7jR5Kw"/>
+    <mappings xmi:id="_XfvdslHEEeyB_sSB7jR5Kw" origin="_XfvdsFHEEeyB_sSB7jR5Kw" image="_XfvdsVHEEeyB_sSB7jR5Kw"/>
+    <mappings xmi:id="_cq-MclHEEeyB_sSB7jR5Kw" origin="_cq-McFHEEeyB_sSB7jR5Kw" image="_cq-McVHEEeyB_sSB7jR5Kw"/>
+    <mappings xmi:id="_d08FMlHEEeyB_sSB7jR5Kw" origin="_d08FMFHEEeyB_sSB7jR5Kw" image="_d08FMVHEEeyB_sSB7jR5Kw"/>
+  </units>
+</henshin:Module>
