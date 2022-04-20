@@ -17,14 +17,14 @@ Requirements:
 
 1) Henshin 1.6\
 	Update site: https://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/
-2) MOMot: 
+2) MOMot:\
 	Update site: http://martin-fleck.github.io/momot/eclipse/updates/latest/stable/
-3) Download XText via update site (select only XText-related ones, see screenshot): 
+3) Download XText via update site (select only XText-related ones, see screenshot):\
 	Update site: https://download.eclipse.org/modeling/tmf/xtext/updates/composite/milestones/
 	Note: If it says there are conflicts: Allow for modification of current Eclipse packages so it can be installed
-4) Apache Commons CSV 1.4
+4) Apache Commons CSV 1.4\
 	Update site: https://download.eclipse.org/tools/orbit/downloads/drops/R20190827152740/repository
-5) Apache Commons Lang 2.6.0 & Apache Commons Math3 3.5.0
+5) Apache Commons Lang 2.6.0 & Apache Commons Math3 3.5.0\
 	Update site: https://download.eclipse.org/tools/orbit/downloads/drops/R20190602212107/repository 4 plug-ins available
-6) ModulEER
+6) ModulEER\
 	Update site: https://jku-win-se.github.io/module-eer/	
