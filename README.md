@@ -15,6 +15,8 @@ Java 8: https://www.oracle.com/java/technologies/java8.html
 
 Requirements:
 
+Note: The links provided below are Eclipse update site. This means that you have to install those artefacts in your Eclipse installation. More info: https://help.eclipse.org/latest/index.jsp?topic=/org.eclipse.platform.doc.user/tasks/tasks-127.htm
+
 1) Henshin 1.6\
 	Update site: https://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/
 2) MOMot:\
