@@ -13,7 +13,7 @@ This plugins were implemented by using Eclipse Modeling Tools 2020-06 + Java 8.
 Eclipse can be downloaded from: https://www.eclipse.org/downloads/packages/release/2020-06/r/eclipse-modeling-tools
 Java 8: https://www.oracle.com/java/technologies/java8.html 
 
-Requirements
+Requirements:
 
 1) Henshin 1.6
 	Update site: https://download.eclipse.org/modeling/emft/henshin/updates/1.6.0/
